@@ -1,0 +1,245 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background: rgb(207, 198, 198);
+  line-height: 1.4;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 25px;
+  text-transform: uppercase;
+
+
+
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+
+h5 {
+  margin-top: 0;
+}
+
+.profile h2 {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.page {
+  display: flex;
+  width: 920px;
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+
+}
+
+/* aside//////////////////////////////////////// */
+aside {
+  flex: 3.7;
+  background: rgb(44, 147, 170);
+  color: aliceblue;
+  height: 100%;
+
+}
+
+
+
+
+.image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.profile {
+  /* background: rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  color: #fff;
+  padding-bottom: 2em;
+
+}
+
+.contacts,
+.education,
+.languages,
+.interest {
+
+  margin: 25px 10px 25px 10px;
+
+}
+
+.contacts ul li a {
+  color: #fff;
+  list-style: none;
+  margin-bottom: 5px;
+  text-decoration: none;
+  line-height: 1.9;
+  font-weight: lighter;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #42A8C0;
+  padding: 1em;
+  height: 100%;
+  color: #fff;
+}
+
+.sidebar ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+
+}
+
+
+/* main block////////////////////////////////////// */
+main {
+  flex: 8.3;
+  padding: 30px;
+
+}
+
+main h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+main h5 {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+
+main h4 {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 20;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+main div h2 {
+  padding-top: 30px;
+}
+
+.skillset {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillset .item {
+  display: flex;
+  margin-bottom: 15px;
+  overflow: hidden;
+
+}
+
+
+
+.skillset h3 {
+  width: 150px;
+}
+
+.level-title:hover {
+  cursor: pointer;
+
+}
+
+/* background: #7bc2d3;} */
+
+.progress {
+  margin-top: 20px;
+  background: #3F4650;
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 14px;
+  width: 400px;
+}
+
+.skills:hover .progress-value.html {
+  animation: load-html 3s normal forwards infinite;
+}
+
+.skills:hover .progress-value.js {
+  animation: load-js 3s normal forwards infinite;
+}
+
+.skills:hover .progress-value.angular {
+  animation: load-angular 3s normal forwards infinite;
+}
+
+.progress-value {
+  box-shadow: 0 10px 0px -10px rgb(71, 67, 67);
+  border-radius: 100px;
+  background: #fff;
+  height: 10px;
+  width: 0;
+}
+
+
+@keyframes load-html {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes load-js {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes load-angular {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
